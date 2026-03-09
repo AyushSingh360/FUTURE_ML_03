@@ -1,0 +1,10 @@
+pandas
+numpy
+spacy
+nltk
+scikit-learn
+matplotlib
+seaborn
+kagglehub
+# Optional for semantic similarity
+sentence-transformers
