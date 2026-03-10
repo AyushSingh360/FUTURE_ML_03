@@ -23,7 +23,7 @@ def load_kaggle_resumes(dataset_slug: str = "snehaanbhawal/resume-dataset") -> p
     path = kagglehub.dataset_download(dataset_slug)
     print(f"Dataset downloaded to: {path}")
     # The dataset contains a single CSV file
-    csv_files = list(Path(path).glob("*.csv"))
+    csv_files = list(Path(path).rglob("*.csv"))
     if not csv_files:
         raise FileNotFoundError(f"No CSV found in {path}")
     df = pd.read_csv(csv_files[0])

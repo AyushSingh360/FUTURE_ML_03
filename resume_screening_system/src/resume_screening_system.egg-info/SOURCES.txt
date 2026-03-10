@@ -1,5 +1,12 @@
 README.md
 setup.py
+src/candidate_ranking.py
+src/data_loader.py
+src/similarity_scoring.py
+src/skill_extraction.py
+src/skill_gap_analysis.py
+src/text_preprocessing.py
+src/vectorization.py
 src/resume_screening_system.egg-info/PKG-INFO
 src/resume_screening_system.egg-info/SOURCES.txt
 src/resume_screening_system.egg-info/dependency_links.txt

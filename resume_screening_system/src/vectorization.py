@@ -24,6 +24,8 @@ def transform_texts(vectorizer: TfidfVectorizer, texts: pd.Series):
 
 def save_vectorizer(vectorizer: TfidfVectorizer, filepath: Union[str, Path]):
     """Persist the fitted vectorizer to disk using pickle."""
+    filepath = Path(filepath)
+    filepath.parent.mkdir(parents=True, exist_ok=True)
     with open(filepath, "wb") as f:
         pickle.dump(vectorizer, f)
 
